@@ -20,7 +20,6 @@ class BookController extends Zend_Controller_Action
                 )
             )
         );
-
         $this->db = Zend_Db::factory($config->database);
         //var_dump($db); exit;
         $messages = $this->_helper->flashMessenger->getMessages();
@@ -32,12 +31,10 @@ class BookController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
-
+        // action body for listing books
         $book = new Application_Model_DbTable_Book();
         $res = $book->getList($this->db);
         $this->view->books = $res;
-
     }
 
     public function addAction()

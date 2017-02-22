@@ -22,11 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72629696">
-              <caret line="173" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+            <state vertical-scroll-proportion="-65.30769">
+              <caret line="159" column="25" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/BookController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3649374">
+              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -82,7 +92,6 @@
         <option value="$PROJECT_DIR$/application/views/scripts/book/edit.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/book/delete.phtml" />
         <option value="$PROJECT_DIR$/application/models/DbTable/Book.php" />
-        <option value="$PROJECT_DIR$/application/controllers/BookController.php" />
         <option value="$PROJECT_DIR$/library/Doctrine/Query/Abstract.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/user/add.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/user/index.phtml" />
@@ -95,6 +104,7 @@
         <option value="$PROJECT_DIR$/application/models/User.php" />
         <option value="$PROJECT_DIR$/application/Bootstrap.php" />
         <option value="$PROJECT_DIR$/application/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/application/controllers/BookController.php" />
       </list>
     </option>
   </component>
@@ -314,8 +324,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72629696">
-          <caret line="173" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+        <state vertical-scroll-proportion="-65.30769">
+          <caret line="159" column="25" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/BookController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3649374">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
           <folding />
         </state>
       </provider>
