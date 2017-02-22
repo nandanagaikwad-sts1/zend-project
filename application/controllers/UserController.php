@@ -77,8 +77,6 @@ class UserController extends Zend_Controller_Action
                     $msg =  "User created successfully.";
                     $this->_helper->flashMessenger($msg);
                     $this->_helper->redirector('add');
-
-
             } else {
                 $form->populate($formData);
             }
@@ -87,7 +85,7 @@ class UserController extends Zend_Controller_Action
 
     public function editAction()
     {
-        // action body
+        // action body for edit action
         $form = new Application_Form_User();
         $form->setElementDecorators(array(
             'viewHelper',
