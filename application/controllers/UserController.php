@@ -136,7 +136,6 @@ class UserController extends Zend_Controller_Action
                     $this->_helper->flashMessenger($msg);
                     $this->_helper->redirector('index');
                 }
-
             } else {
                 $form->populate($formData);
             }
@@ -151,7 +150,7 @@ class UserController extends Zend_Controller_Action
 
     public function deleteAction()
     {
-        // action body
+        // action body delete action
         if($this->getRequest()->isPost()) {
             $del = $this->getRequest()->getPost('del');
             if($del == 'Yes') {
