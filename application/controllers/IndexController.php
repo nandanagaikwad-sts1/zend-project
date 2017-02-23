@@ -290,8 +290,18 @@ class IndexController extends Zend_Controller_Action
         $stmt->execute($data);
         echo "<pre>";
         print_r($stmt->fetchAll()); exit;
+    }
 
+    public function testadapterAction()
+    {
+        $id =14 ;
+        $sql = "SELECT * FROM book WHERE id = :id ";
+        $stmt  = Zend_Registry::get("db")->prepare($sql);
+        $data=array(':id'=> $id);
 
+        $stmt->execute($data);
+        echo "<pre>";
+        print_r($stmt->fetchAll()); exit;
     }
 
 
