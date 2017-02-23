@@ -20,7 +20,6 @@ class BookController extends Zend_Controller_Action
                 )
             )
         );
-
         $this->db = Zend_Db::factory($config->database);
         //var_dump($db); exit;
         $messages = $this->_helper->flashMessenger->getMessages();
@@ -32,12 +31,10 @@ class BookController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
-
+        // action body for listing books
         $book = new Application_Model_DbTable_Book();
         $res = $book->getList($this->db);
         $this->view->books = $res;
-
     }
 
     public function addAction()
@@ -90,7 +87,7 @@ class BookController extends Zend_Controller_Action
 
     public function editAction()
     {
-        // action body
+        // action body for edit action
         $form = new Application_Form_Book();
         $form->setElementDecorators(array(
             'viewHelper',
@@ -104,17 +101,14 @@ class BookController extends Zend_Controller_Action
             array('HtmlTag', array('tag'=>'div', 'class'=>'col-md-3', 'style'=>'width:25%')),
         ));
         foreach($form->getElements() as $element){
-
             if($element->id != 'submitbutton'){
                 $element->setAttrib('class', 'form-control');
-                //$element->removeDecorator('Errors');
 
             } else {
                 $element->removeDecorator('label');
             }
             $deco_html_tag = $element->getDecorator('HtmlTag');
             $deco_html_tag->setOption('class', 'clearfix');
-            //$element->addDecorator('FormErrors');
         }
         $form->submit->setLabel('Save');
         $this->view->form = $form;
@@ -144,7 +138,7 @@ class BookController extends Zend_Controller_Action
 
     public function deleteAction()
     {
-        // action body
+        // action body for delete action
         if($this->getRequest()->isPost()) {
             $del = $this->getRequest()->getPost('del');
             if($del == 'Yes') {

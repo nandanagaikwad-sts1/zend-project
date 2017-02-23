@@ -90,7 +90,6 @@ class UserController extends Zend_Controller_Action
         $form->setElementDecorators(array(
             'viewHelper',
             'Errors',
-            // array('Errors', array('class' => 'errors', 'style'=>'list-style: none; color:red;')),
             array('Label'),
             array(
                 array('row'=>'HtmlTag'),
@@ -118,7 +117,6 @@ class UserController extends Zend_Controller_Action
             }
             $deco_html_tag = $element->getDecorator('HtmlTag');
             $deco_html_tag->setOption('class', 'clearfix');
-            //$element->addDecorator('FormErrors');
         }
         $form->submit->setLabel('Save User');
         $this->view->form = $form;
